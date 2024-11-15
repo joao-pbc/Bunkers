@@ -1,0 +1,31 @@
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+.content {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.stockTable {
+    margin: 1%;
+    margin-bottom: 2%;
+}
+
+.stockSearchInput {
+    margin: 1%;
+}
+
+.flex {
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    align-items: center;
+
+}

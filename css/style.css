@@ -1,0 +1,68 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+}
+  
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #f1f1f1;
+    --primary-color: #bb86fc;
+    --secondary-color: #3700b3;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+}
+
+.lightMode {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    background: var(--background-color);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "mainContent mainContent mainContent"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: var(--background-color);
+    align-items: center;
+}
+
+.content {
+    grid-area: mainContent;
+    display: flex;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: end;
+    padding-right: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px 15px 5px 15px;
+}
