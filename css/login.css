@@ -1,0 +1,30 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+.mainContent {
+    margin: 12.5%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.login {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+}
+
+.login_input{
+    display: flex;
+    flex-direction: column;
+}
