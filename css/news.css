@@ -1,0 +1,72 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --primary-color: #007bff;
+    --secondary-color: #91979d;
+}
+  
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #f1f1f1;
+    --primary-color: #bb86fc;
+    --secondary-color: #3700b3;
+}
+
+.news{
+    display: flex;
+    border-color: var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 0;
+    gap: 5%;
+    padding: 4%;
+    color: var(--text-color);
+}
+
+.news:hover {
+    cursor: pointer;
+}
+
+.contentWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    grid-area: header;
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    background-color: var(--background-color);
+    align-items: start;
+    width: 100%;
+    justify-content: start;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    border-color: var(--text-color);
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px 15px 5px 15px;
+    text-wrap: nowrap;
+}
+
+.footer {
+    align-items: start;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    padding: 4%;
+}
+
+.lightMode {
+    color: var(--text-color);
+}

@@ -1,0 +1,36 @@
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --primary-color: #007bff;
+    --secondary-color: #91979d;
+}
+  
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #f1f1f1;
+    --primary-color: #bb86fc;
+    --secondary-color: #3700b3;
+}
+
+body {
+    background: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    width: 90vw;
+    margin-top: 1%;
+}
+
+hr {
+    margin-top: 5%;
+    color: var(--text-color);
+    height: 1px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--text-color);
+}
